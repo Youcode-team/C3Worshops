@@ -128,3 +128,25 @@ On vous remet un objet JSON représentant une partie de votre collection d'album
 -- Après updateRecords(2548, "tracks", ""), les tracks ne doivent pas être définies
 -- Après updateRecords(1245, "album", "Riptide"), l'album doit être "Riptide".
 
+### Enoncé 6 
+
+Nous disposons d'une série d'objets représentant différentes personnes dans nos listes de contacts.
+
+Une fonction lookUpProfile qui prend le nom et une propriété (prop) comme arguments a été pré-écrite pour vous.
+
+La fonction doit vérifier si le nom est le prénom d'un contact réel et si la propriété donnée (prop) est une propriété de ce contact.
+
+Si les deux sont vrais, elle renvoie alors la "valeur" de cette propriété.
+
+Si le nom ne correspond à aucun contact, alors retournez "Aucun contact".
+
+Si prop ne correspond à aucune propriété valide d'un contact trouvé correspondant au nom, alors retournez "Aucune propriété de ce type".
+
+- Verification
+
+-- "Kristian", "lastName" doit renvoyer "Vos".
+-- "Sherlock", " likes " doit renvoyer ["Intriguing Cases", "Violin"]
+-- "Harry", " likes " doit renvoyer un tableau
+-- "Bob", " number " doit renvoyer "Aucun contact".
+-- "Bob", " potato " doit retourner "Aucun contact".
+-- "Akira", "adresse" doit renvoyer "Aucune propriété de ce type".
