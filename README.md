@@ -90,3 +90,41 @@ Exemple de sortie
 -3 	Attend
 
 5 	Pari 
+
+### Enoncé 5 : Collection de données
+Cet exercice a pour objectif de tester vos connaissance en Objet JS.
+
+On vous remet un objet JSON représentant une partie de votre collection d'albums musicaux. Chaque album a plusieurs propriétés et un numéro d'identification unique comme clé. Tous les albums ne disposent pas d'informations complètes.
+
+Écrivez une fonction qui prend l'identifiant d'un album (comme 2548), une propriété prop (comme "artist" ou "tracks"), et une valeur (comme "Addicted to Love") pour modifier les données de cette collection.
+
+- Si prop n'est pas "tracks" et que la valeur n'est pas vide (""), mettez à jour ou définissez la valeur pour la propriété de cet album.
+
+- Votre fonction doit toujours retourner l'objet de collection entier.
+
+- Il existe plusieurs règles pour traiter les données incomplètes :
+
+-- Si prop est "tracks" mais que l'album n'a pas de propriété "tracks", créez un tableau vide avant d'ajouter la nouvelle valeur à la propriété correspondante de l'album.
+
+-- Si prop est "tracks" et que la valeur n'est pas vide (""), poussez la valeur à la fin du tableau des pistes existantes de l'album.
+
+-- Si la valeur est vide (""), supprimez la propriété prop donnée de l'album.
+
+- Conseils
+
+-- Utilisez la notation par parenthèses lorsque vous accédez aux propriétés d'un objet avec des variables.
+
+-- La méthode Push est une méthode de tableau que vous pouvez consulter sur le réseau des développeurs Mozilla.
+
+-- Vous pouvez vous référer à Manipulating Complex Objects Introducing JavaScript Object Notation (JSON) pour une mise à jour.
+
+- Verification
+-- Vous ne devez pas modifier l'initialisation de l'objet de collection
+-- Après updateRecords(5439, "artist", "ABBA"), l'artiste doit être "ABBA"
+-- Après updateRecords(5439, "tracks", "Take a Chance on Me"), les tracks devraient -- avoir "Take a Chance on Me" comme dernier élément.
+-- Après updateRecords(2548, "artist", ""), l'artiste ne doit pas être défini
+-- Après updateRecords(1245, "tracks", "Addicted to Love"), les tracks devraient avoir "Addicted to Love" comme dernier élément.
+-- Après la mise à jour des enregistrements (2468, "tracks", "Free"), les pistes doivent avoir "1999" comme premier élément.
+-- Après updateRecords(2548, "tracks", ""), les tracks ne doivent pas être définies
+-- Après updateRecords(1245, "album", "Riptide"), l'album doit être "Riptide".
+
