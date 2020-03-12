@@ -119,13 +119,23 @@ On vous remet un objet JSON représentant une partie de votre collection d'album
 -- Vous pouvez vous référer à Manipulating Complex Objects Introducing JavaScript Object Notation (JSON) pour une mise à jour.
 
 - Verification
+
 -- Vous ne devez pas modifier l'initialisation de l'objet de collection
+
 -- Après updateRecords(5439, "artist", "ABBA"), l'artiste doit être "ABBA"
--- Après updateRecords(5439, "tracks", "Take a Chance on Me"), les tracks devraient -- avoir "Take a Chance on Me" comme dernier élément.
+
+-- Après updateRecords(5439, "tracks", "Take a Chance on Me"), les tracks devraient 
+
+-- avoir "Take a Chance on Me" comme dernier élément.
+
 -- Après updateRecords(2548, "artist", ""), l'artiste ne doit pas être défini
+
 -- Après updateRecords(1245, "tracks", "Addicted to Love"), les tracks devraient avoir "Addicted to Love" comme dernier élément.
+
 -- Après la mise à jour des enregistrements (2468, "tracks", "Free"), les pistes doivent avoir "1999" comme premier élément.
+
 -- Après updateRecords(2548, "tracks", ""), les tracks ne doivent pas être définies
+
 -- Après updateRecords(1245, "album", "Riptide"), l'album doit être "Riptide".
 
 ### Enoncé 6 
@@ -145,8 +155,13 @@ Si prop ne correspond à aucune propriété valide d'un contact trouvé correspo
 - Verification
 
 -- "Kristian", "lastName" doit renvoyer "Vos".
+
 -- "Sherlock", " likes " doit renvoyer ["Intriguing Cases", "Violin"]
+
 -- "Harry", " likes " doit renvoyer un tableau
+
 -- "Bob", " number " doit renvoyer "Aucun contact".
+
 -- "Bob", " potato " doit retourner "Aucun contact".
+
 -- "Akira", "adresse" doit renvoyer "Aucune propriété de ce type".
