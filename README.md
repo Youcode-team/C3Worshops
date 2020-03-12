@@ -118,7 +118,7 @@ On vous remet un objet JSON représentant une partie de votre collection d'album
 
 -- Vous pouvez vous référer à Manipulating Complex Objects Introducing JavaScript Object Notation (JSON) pour une mise à jour.
 
-- Verification
+- Vérification
 
 -- Vous ne devez pas modifier l'initialisation de l'objet de collection
 
@@ -152,7 +152,7 @@ Si le nom ne correspond à aucun contact, alors retournez "Aucun contact".
 
 Si prop ne correspond à aucune propriété valide d'un contact trouvé correspondant au nom, alors retournez "Aucune propriété de ce type".
 
-- Verification
+- Vérification
 
 -- "Kristian", "lastName" doit renvoyer "Vos".
 
@@ -165,3 +165,13 @@ Si prop ne correspond à aucune propriété valide d'un contact trouvé correspo
 -- "Bob", " potato " doit retourner "Aucun contact".
 
 -- "Akira", "adresse" doit renvoyer "Aucune propriété de ce type".
+
+### Enoncé 7 : Recursion
+
+Nous avons défini une fonction appelée rangeOfNumbers avec deux paramètres. La fonction doit renvoyer un tableau d'entiers qui commence par un nombre représenté par le paramètre startNum et se termine par un nombre représenté par le paramètre endNum. Le nombre de départ sera toujours inférieur ou égal au nombre de fin. Votre fonction doit utiliser la récursion en s'appelant elle-même et ne pas utiliser de boucles d'aucune sorte. Elle doit également fonctionner pour les cas où les paramètres startNum et endNum sont identiques.
+
+- Vérification 
+
+-- rangeOfNumbers(6, 9) devrait retourner [6, 7, 8, 9].
+
+-- rangeOfNumbers(4, 4) devrait renvoyer [4].
